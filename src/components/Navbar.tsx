@@ -44,11 +44,9 @@ const Navbar: React.FC = () => {
         break;
       case 'ArrowDown':
         event.preventDefault();
-        // Logic for navigating down through menu items
         break;
       case 'ArrowUp':
         event.preventDefault();
-        // Logic for navigating up through menu items
         break;
       case 'Tab':
         if (!event.shiftKey && focusedMenuItem === 'last') {
@@ -232,10 +230,9 @@ const Navbar: React.FC = () => {
                 {activeMegaMenu === link.megaMenu && megaMenus[link.megaMenu as keyof typeof megaMenus] && (
                   <div 
                     id={`${link.megaMenu}-menu`}
-                    className="absolute top-full left-0 w-screen max-w-7xl -ml-72 pt-4 opacity-0 transform -translate-y-2 transition-all duration-200"
+                    className="absolute top-full left-1/2 transform -translate-x-1/2 pt-4 w-[800px] max-w-[calc(100vw-2rem)]"
                     onMouseEnter={() => setActiveMegaMenu(link.megaMenu)}
                     onMouseLeave={() => setActiveMegaMenu(null)}
-                    style={{ animation: 'fadeInUp 0.2s ease-out forwards' }}
                   >
                     <div className="bg-white rounded-xl shadow-xl border border-gray-200 p-6">
                       <div className="grid grid-cols-3 gap-8">
