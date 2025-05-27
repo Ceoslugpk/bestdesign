@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import { 
   Server, Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin,
   Globe, Shield, Database, Cloud, Code, Box, Settings, Users,
-  CreditCard, LifeBuoy, BookOpen, MessageSquare, Award, Clock
+  CreditCard, LifeBuoy, BookOpen, MessageSquare, Award, Clock,
+  Cpu, Search, ArrowRight, Lock, Video, Activity
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
